@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>quizweb</title>
+
+</head>
+<body>
+    <div class="home-box custom-box">
+        <h3>trắc nghiệm về bác</h3>
+        <p><span class="total-question"></span></p>
+        <button type="button" class="btn" onclick="startQuiz()">bắt đầu</button>
+    </div>
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">
+           
+        </div>
+        <div class="question-text">
+
+        </div>
+        <div class="option-container">
+          
+        </div>
+        <div class="cautiep">
+            <button type="button" class="btn" onclick="next()">câu tiếp </button>
+        </div>
+        <div class="answers-indicator">
+           
+        </div>
+        
+        </div>
+        <div class="result-box custom-box hide">
+            <table>
+                <tr>
+                    <td>số câu </td>
+                    <td><span class="total-question"></span></td>
+                </tr>
+                <tr>
+                    <td>số câu bỏ</td>
+                    <td><span class="total-attempt"></span></td>
+                </tr>
+                <tr>
+                    <td>số câu đúng</td>
+                    <td> <span class="total-correct"></span></td>
+                </tr>
+                <tr>
+                    <td>số câu sai</td>
+                    <td><span class="total-wrong"></span></td>
+                </tr>
+                <tr>
+                    <td>tỉ lệ</td>
+                    <td><span class="percentage"></span></td>
+                </tr>
+                <tr>
+                    <td>tổng điểm</td>
+                    <td><span class="total-score"></span></td>
+                </tr>
+            </table>
+            <button type="button" class="btn" onclick="thulai()"> thử lại</button>
+            <button type="button" class="btn" onclick="trangchu()">trang chủ</button>
+        </div>
+<script src="question.js"></script>        
+<script src="app..js"></script>
+</body>
+</html>
