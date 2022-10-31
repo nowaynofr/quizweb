@@ -27,7 +27,7 @@ function setAvailableQuestion(){
 }
 function getNewQuestion(){
     
-    questionNumber.innerHTML = "câu số "+(questionCounter+1) +" trên  "+quiz.length;
+    questionNumber.innerHTML = "câu số "+(questionCounter+1) +"/"+quiz.length;
 
     const questionIndex = availableQuestion[(Math.floor(Math.random() *availableQuestion.length))]
     currentQuestion =questionIndex;
